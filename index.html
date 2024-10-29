@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esta página te mostrará información sobre tu IMC">  
+    <meta name="description" content="Esta página te mostrará información sobre tu IMC">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Página Principal - IMC</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="images//Captura_de_pantalla_2024-10-01_132102-removebg-preview.png" alt="Logo IMC" class="logo">
+            <img src="images/Captura_de_pantalla_2024-10-01_132102-removebg-preview.png" alt="Logo IMC" class="logo">
         </div>
         <nav>
             <ul>
@@ -24,23 +24,22 @@
 
     <main>
         <section>
-            <h1>Bienvenido, [Nombre del usuario]</h1>
-            <p>Tu IMC es: <strong>[IMC Calculado]</strong></p>
-            <p>Te encuentras en el rango: <strong>[Rango de IMC]</strong></p>
+            <h1>Bienvenido, <span id="user-name"></span></h1>
+            <p>Tu IMC es: <strong id="user-imc"></strong></p>
+            <p>Te encuentras en el rango: <strong id="imc-range"></strong></p>
         </section>
 
         <section>
             <h2>Características de tu rango de IMC:</h2>
-            <ul>
-                <li>Característica 1 basada en el IMC</li>
-                <li>Característica 2 basada en el IMC</li>
-                <li>Característica 3 basada en el IMC</li>
-            </ul>
+            <ul id="imc-features"></ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Página IMC</p>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
+

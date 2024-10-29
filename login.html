@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IMC</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Portal IMC</h1>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <input type="text" id="reg-name" placeholder="Nombre" required>
+                <input type="password" id="reg-password" placeholder="Contraseña" required>
+                <input type="number" id="reg-weight" placeholder="Peso (kg)" required>
+                <input type="number" id="reg-height" placeholder="Altura (cm)" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <input type="text" id="login-name" placeholder="Nombre" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 IMC Portal</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
