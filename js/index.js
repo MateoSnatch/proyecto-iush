@@ -56,14 +56,22 @@ if (usuarioActivo) {
     document.getElementById('user-imc').textContent = imc;
     document.getElementById('imc-range').textContent = rango;
 
-    const featuresList = document.getElementById('imc-features');
+    const featuresSection = document.getElementById('imc-features');
     caracteristicas.forEach(caracteristica => {
-        const li = document.createElement('li');
-        li.textContent = caracteristica;
-        featuresList.appendChild(li);
+        const card = document.createElement('div');
+        card.classList.add('imc-card');
+        
+        const cardTitle = document.createElement('h3');
+        cardTitle.textContent = rango;
+
+        const cardContent = document.createElement('p');
+        cardContent.textContent = caracteristica;
+
+        card.appendChild(cardTitle);
+        card.appendChild(cardContent);
+        featuresSection.appendChild(card);
     });
 } else {
     alert('No se encontró un usuario activo. Por favor, inicia sesión.');
     window.location.href = 'login.html';
 }
-
